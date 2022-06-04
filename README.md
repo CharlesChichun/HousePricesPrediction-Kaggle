@@ -22,8 +22,11 @@ This Kaggle Competition is to determine key factors which may influence house pr
 - from *sklearn* import *LabelEncoder*
 
 before:
+
 ![before](./assets/before.png)
+
 after:
+
 ![after](./assets/after.png)
 
 #### 1.3 data cleaning
