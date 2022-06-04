@@ -1,49 +1,68 @@
-# Kaggle Practice Project
+# House Prices Prediction (Kaggle Competition)
 
-## House Prices - Advanced Regression Techniques
+## Problem to Solve
 
-## Problem Description
-
-This Kaggle Challenge is addressing factors which can influence price negotiations besides the number of bedrooms or a white-picket fence in the real estate realm.
+This Kaggle Competition is to determine key factors which may influence house prices, and when factors are identified and weighted, you would use a model to predict the sales price for each house.
 
 ## Procedure
 
-1. Explarotory data analysis
-2. Preparing data for modeling
+1. Explarotory Data Analysis
+2. Pre-modeling preparation
 3. Modeling
 
-### 1. Explarotory data analysis
+### 1. Explarotory Data Analysis
 
-#### 1.1 Data import and observe
+#### 1.1 data importing and analyzing
 
 - description
 - table
 
 #### 1.2 categorical data encoding
 
-- table
+- from *sklearn* import *LabelEncoder*
 
-#### 1.3 clean
+before:
+![before](./assets/before.png)
+after:
+![after](./assets/after.png)
+
+#### 1.3 data cleaning
+
+- Drop **"ID"** column which is meaningless
 
 #### 1.4 correlation
 
 ![image](./assets/cor.jpeg)
 
-### 2. Preparing training and testing data
+### 2. Pre-modeling preparation
 
 #### 2.1 spliting
 
+- Randomly split a group of training data
+- Pull **"SalePrice"** as response variable
+
 #### 2.2 normalization
+
+- from *sklearn* import *LabelEncoder*
 
 ### 3. Modeling
 
-#### 3.1 building Neural Network model
+#### 3.1 Neural Network Model building
 
-#### 3.2 fiting
+- Use Sequential Model from *keras*
+- 8 Dense and 7 Dropout layers
+
+![sum](./assets/sum.png)
+
+#### 3.2 fitting
+
+- Choose *Adam* as Optimizer with learning rate = 0.3
+
+![loss](./assets/loss.jpeg)
 
 #### 3.3 prediction
 
-## Result
+![pre](./assets/pre.png)
 
 ## Reference
 
